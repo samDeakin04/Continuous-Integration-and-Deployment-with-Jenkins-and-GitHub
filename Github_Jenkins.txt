@@ -10,13 +10,13 @@ pipeline {
         
         stage('Unit and Integration Tests') {
             steps {
-                echo 'Running unit and integration tests....'
+                echo 'Running unit and integration tests...'
             }
         }
         
         stage('Code Analysis') {
             steps {
-                echo 'Running code analysis using Checkstyle..'
+                echo 'Running code analysis using Checkstyle...'
             }
         }
         
@@ -40,7 +40,7 @@ pipeline {
         
         stage('Deploy to Production') {
             steps {
-                echo 'Deploying to production server using AWS EC2 instance...'
+                echo 'Deploying to production server using AWS EC2 instance..'
             }
         }
         
@@ -66,7 +66,7 @@ pipeline {
 		mimeType: 'text/html',
                 attachLog: true,
                 body: 'Email sent by Jenkins',
-                subject: 'Failure!! Logs Email - Received',
+                subject: 'Failure!!! Logs Email - Received',
                 to: 'samruddhitest01@gmail.com'
             )
         }
