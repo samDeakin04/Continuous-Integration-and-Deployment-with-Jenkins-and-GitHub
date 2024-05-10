@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    
+ 
     stages {
         stage('Build') {
             steps {
@@ -11,12 +11,12 @@ pipeline {
         stage('Unit and Integration Tests') {
             steps {
                 echo 'Running unit and integration tests..'
-           
+           }
         }
         
         stage('Code Analysis') {
             steps {
-                echo 'Running code analysis using Checkstyle......'
+                echo 'Running code analysis using Checkstyle..'
             }
         }
         
