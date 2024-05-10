@@ -11,12 +11,12 @@ pipeline {
         stage('Unit and Integration Tests') {
             steps {
                 echo 'Running unit and integration tests..'
-            7D
+           
         }
         
         stage('Code Analysis') {
             steps {
-                echo 'Running code analysis using Checkstyle....'
+                echo 'Running code analysis using Checkstyle.....'
             }
         }
         
